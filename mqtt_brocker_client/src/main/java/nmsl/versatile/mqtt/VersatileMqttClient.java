@@ -13,7 +13,7 @@ public class VersatileMqttClient implements MqttCallback {
 	MqttClient mClient;
 	MqttConnectOptions connOpts;
 	
-	static final String BROCKER_URL = "tcp://127.0.0.1:1883";
+	static final String BROCKER_URL = "tcp://192.168.0.12:1883";
 
 	static final Boolean subscriber = true;
 	static final Boolean publisher = true;
