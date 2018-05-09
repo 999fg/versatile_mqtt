@@ -40,7 +40,7 @@ public class VersatileMqttClient implements MqttCallback {
 
 		if (topic.equals("STATUS")){
 			System.out.println("STATUS Arrived!");
-			String pubMessage = "{\"pubmessage\":" + 0 + "}";
+			String pubMessage = "{\"deviceName\":" + "\"DESKTOP_1\"" + "}";
 			int pubQoS = 0;
 			MqttMessage response_message = new MqttMessage(pubMessage.getBytes());
 			message.setQos(pubQoS);
